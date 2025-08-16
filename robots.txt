@@ -1,0 +1,34 @@
+# Robots.txt para CONECTA Rural Telecom
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://conectarural.com.br/sitemap.xml
+
+# Crawl-delay para evitar sobrecarga
+Crawl-delay: 1
+
+# Bloquear arquivos temporários
+Disallow: /tmp/
+Disallow: /*.tmp$
+Disallow: /*.temp$
+
+# Bloquear arquivos de configuração sensíveis
+Disallow: /.env
+Disallow: /config/
+Disallow: /.git/
+
+# Permitir crawling de recursos importantes
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Bloquear parâmetros de rastreamento desnecessários
+Disallow: /*?utm_*
+Disallow: /*&utm_*
+Disallow: /*?fbclid=*
+Disallow: /*&fbclid=*
+
+# Informações de contato para webmasters
+# Webmaster: contato@conectarural.com.br
